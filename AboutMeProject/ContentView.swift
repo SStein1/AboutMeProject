@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("All About Me")
-                .font(.title3)
+                .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(Color.blue)
             Image ("Sunset")
@@ -19,7 +19,7 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fit)
             .padding(.all)}
         HStack {
-                Image("Sushi")
+                Image("froyo")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
                     .padding(.all)
