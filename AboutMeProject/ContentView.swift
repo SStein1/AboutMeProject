@@ -10,24 +10,23 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.gray.opacity(0.1)
+            Color.blue.opacity(0.2)
                 .ignoresSafeArea()
             ScrollView {
-                VStack (spacing:10) {
+                VStack (spacing:2) {
                     Image ("Shira")
                         .resizable()
                         .frame(width: 200.0, height: 300.0)
                         .clipShape(Circle())
                     
                     Text("Shira Stein")
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.purple)
                         .multilineTextAlignment(.center)
                         .padding(.all)
                 }
                 VStack {
-                    
                     Image ("Sunset")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
@@ -35,8 +34,6 @@ struct ContentView: View {
                     Text ("My favorite times of day are sunrise 🌅 and sunset!") .font (.title3)
                         .foregroundColor(Color.blue)
                         .multilineTextAlignment(.center)
-                    
-                    
                     HStack {
                         Image("froyo")
                             .resizable(resizingMode: .stretch)
@@ -52,17 +49,31 @@ struct ContentView: View {
                             .frame(width: 120.0, height: 120.0)
                         
                         Text ("I love to read on the beach 🏖️!")
+                            .font(.body)
                             .foregroundColor(Color.pink)
                             .padding(.all)
-                        
                     }
-                    Text ("ABOUT ME")
-                        .font(.largeTitle)
+                    Text ("MORE FACTS ABOUT ME...")
+                        .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.purple)
+                        .multilineTextAlignment(.center)
+                    Text ("I have 3 👩🏻‍🦰 👧🏻 👱🏼‍♀️daughters!")
+                        .font(.body)
+                        .foregroundColor(Color.purple)
+                        .multilineTextAlignment(.leading)
+                    Text ("I have dog 🐾 named Sammy!")
+                        .font(.body)
+                        .foregroundColor(Color.purple)
+                    Text ("I am very excited 🎉 to be part of the KWK team this summer!")
+                        .font(.body)
+                        .foregroundColor(Color.purple)
+                        .multilineTextAlignment(.center)
                     
+                    
+                                    
                 }
-                }
+            }
             }
         }
 
